@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form with Validation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Basic Form with Validation</h1>
+        <form action="#" method="post">
+            <!-- Name Field -->
+            
+            <div class="nameField">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <!-- Email Field -->
+            <div class="emailField">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Phone Number Field -->
+            <div class="phoneField">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10,}" placeholder="Enter valid 10-digit number" required>
+            </div>
+
+            <!-- Password Field -->
+            <div class="passwordField">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <!-- Age Field -->
+            <div class="ageField">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="100" required>
+            </div>
+
+            <!-- Gender Field -->
+            <div class="genderField">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+            </div>
+
+            <!-- Date Field -->
+            <div class="dateField">
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+
+            <!-- Color Picker Field -->
+            <div class="colorField">
+                <label for="favoriteColor">Favorite Color:</label>
+                <input type="color" id="favoriteColor" name="favoriteColor">
+            </div>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
