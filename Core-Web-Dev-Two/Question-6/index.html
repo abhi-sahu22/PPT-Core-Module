@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Window</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Modal Window Testing</h1>
+    <button id="openModalBtn">Open Modal</button>
+    <h2>List elements to allow scrolling in main window</h2>
+    <ul class="list">
+        <li>ListItem</li>
+        <li>ListItem</li>
+        <li>ListItem</li>
+        <li>ListItem</li>
+    </ul>
+<!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Modal Content</h2>
+            <p>This is the content of the modal window.</p>
+            <p>Now there will be no scrolling.</p>
+        </div>
+    </div>
+<!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
